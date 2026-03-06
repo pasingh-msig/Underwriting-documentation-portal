@@ -1,7 +1,9 @@
 site_name: Underwriting Documentation Portal
+site_url: https://pasingh-msig.github.io/Underwriting-documentation-portal/
 site_description: Documentation portal for underwriting initiatives, UWWB, shared capabilities, and audit evidence
 site_author: MSIG Underwriting
-repo_name: underwriting-docs-portal
+repo_url: https://github.com/pasingh-msig/Underwriting-documentation-portal
+repo_name: Underwriting-documentation-portal
 docs_dir: docs
 theme:
   name: material
@@ -198,20 +200,21 @@ nav:
               - AI Driven Unified Interface Integration: initiatives/uwwb/common-capabilities/ai-driven-unified-interface-integration.md
               - Shared Referral Workflow: initiatives/uwwb/common-capabilities/shared-referral-workflow.md
   - Templates:
-      - Initiative Overview Template: templates/initiative-overview-template.md
-      - Application Business View Template: templates/application-business-view-template.md
-      - Application Technical View Template: templates/application-technical-view-template.md
-      - Operational Controls Template: templates/operational-controls-template.md
-      - Control Mapping Template: templates/control-mapping-template.md
-      - Evidence Index Template: templates/evidence-index-template.md
-      - Risk Register Template: templates/risk-register-template.md
-      - Decision Log Template: templates/decision-log-template.md
-      - Policy Mapping Template: templates/policy-mapping-template.md
-      - Cutover Readiness Template: templates/cutover-readiness-template.md
-      - Benefits Realization Template: templates/benefits-realization-template.md
-      - Audit Raci Template: templates/audit-raci-template.md
-      - Legacy Retirement And Sor Mapping Template: templates/legacy-retirement-and-sor-mapping-template.md
-      - Business Line Business View Template: templates/business-line-business-view-template.md
-      - Business Line Technical View Template: templates/business-line-technical-view-template.md
-      - Product Business View Template: templates/product-business-view-template.md
-      - Product Technical View Template: templates/product-technical-view-template.md
+      - Overview: doc-templates/index.md
+      - Initiative Overview Template: doc-templates/initiative-overview-template.md
+      - Application Business View Template: doc-templates/application-business-view-template.md
+      - Application Technical View Template: doc-templates/application-technical-view-template.md
+      - Operational Controls Template: doc-templates/operational-controls-template.md
+      - Control Mapping Template: doc-templates/control-mapping-template.md
+      - Evidence Index Template: doc-templates/evidence-index-template.md
+      - Risk Register Template: doc-templates/risk-register-template.md
+      - Decision Log Template: doc-templates/decision-log-template.md
+      - Policy Mapping Template: doc-templates/policy-mapping-template.md
+      - Cutover Readiness Template: doc-templates/cutover-readiness-template.md
+      - Benefits Realization Template: doc-templates/benefits-realization-template.md
+      - Audit Raci Template: doc-templates/audit-raci-template.md
+      - Legacy Retirement And Sor Mapping Template: doc-templates/legacy-retirement-and-sor-mapping-template.md
+      - Business Line Business View Template: doc-templates/business-line-business-view-template.md
+      - Business Line Technical View Template: doc-templates/business-line-technical-view-template.md
+      - Product Business View Template: doc-templates/product-business-view-template.md
+      - Product Technical View Template: doc-templates/product-technical-view-template.md
