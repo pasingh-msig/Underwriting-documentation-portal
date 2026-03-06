@@ -1,0 +1,118 @@
+site_name: Underwriting Documentation Portal
+site_description: Documentation portal for underwriting initiatives, U360, shared capabilities, and audit evidence
+site_author: MSIG Underwriting
+repo_name: underwriting-docs-portal
+docs_dir: docs
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Portfolio Overview: portfolio-overview.md
+
+  - Shared Standards:
+      - Business Glossary: shared/business-glossary.md
+      - Architecture Principles: shared/architecture-principles.md
+      - Integration Patterns: shared/integration-patterns.md
+      - Data Governance: shared/data-governance.md
+      - Support Model: shared/support-model.md
+      - Documentation Standards: shared/documentation-standards.md
+      - Audit Documentation Standard: shared/audit-documentation-standard.md
+      - Control Taxonomy: shared/control-taxonomy.md
+      - Evidence Guidelines: shared/evidence-guidelines.md
+      - Audit Template Guidance: shared/audit-template-guidance.md
+
+  - Initiatives:
+      - Producer Hub:
+          - Initiative Overview: initiatives/producer-hub/initiative-overview.md
+          - Audit:
+              - Control Mapping: initiatives/producer-hub/audit/control-mapping.md
+              - Evidence Index: initiatives/producer-hub/audit/evidence-index.md
+              - Risk and Controls: initiatives/producer-hub/audit/risk-and-controls.md
+          - Applications:
+              - Producer Hub Service:
+                  - Business View: initiatives/producer-hub/applications/producer-hub-service/business-view.md
+                  - Technical View: initiatives/producer-hub/applications/producer-hub-service/technical-view.md
+                  - Operational Controls: initiatives/producer-hub/applications/producer-hub-service/operational-controls.md
+
+      - U360:
+          - Initiative Overview: initiatives/u360/initiative-overview.md
+          - Platform Overview: initiatives/u360/platform-overview.md
+          - Audit:
+              - Audit Index: initiatives/u360/audit/audit-index.md
+              - Control Mapping: initiatives/u360/audit/control-mapping.md
+              - Evidence Index: initiatives/u360/audit/evidence-index.md
+              - Audit RACI: initiatives/u360/audit/audit-raci.md
+              - Risk Register: initiatives/u360/audit/risk-register.md
+              - Decision Log: initiatives/u360/audit/decision-log.md
+              - Compliance and Policy Mapping: initiatives/u360/audit/compliance-and-policy-mapping.md
+              - Cutover Readiness Pack: initiatives/u360/audit/cutover-readiness-pack.md
+              - Benefits Realization Plan: initiatives/u360/audit/benefits-realization-plan.md
+              - Legacy Retirement and SOR Mapping: initiatives/u360/audit/legacy-retirement-and-sor-mapping.md
+          - Shared:
+              - Shared Architecture: initiatives/u360/shared/shared-architecture.md
+              - Shared API Standards: initiatives/u360/shared/shared-api-standards.md
+              - Shared Security Model: initiatives/u360/shared/shared-security-model.md
+              - Shared Integrations: initiatives/u360/shared/shared-integrations.md
+              - Shared Data Domains: initiatives/u360/shared/shared-data-domains.md
+              - Shared Production Support: initiatives/u360/shared/shared-production-support.md
+              - Operational Controls: initiatives/u360/shared/operational-controls.md
+          - Business Lines:
+              - Financial Lines:
+                  - Overview: initiatives/u360/business-lines/financial-lines/overview.md
+                  - Business View: initiatives/u360/business-lines/financial-lines/business-view.md
+                  - Technical View: initiatives/u360/business-lines/financial-lines/technical-view.md
+                  - Controls and Risks: initiatives/u360/business-lines/financial-lines/controls-and-risks.md
+              - Casualty:
+                  - Overview: initiatives/u360/business-lines/casualty/overview.md
+                  - Business View: initiatives/u360/business-lines/casualty/business-view.md
+                  - Technical View: initiatives/u360/business-lines/casualty/technical-view.md
+                  - Controls and Risks: initiatives/u360/business-lines/casualty/controls-and-risks.md
+                  - Products:
+                      - GL:
+                          - Business View: initiatives/u360/business-lines/casualty/products/gl/business-view.md
+                          - Technical View: initiatives/u360/business-lines/casualty/products/gl/technical-view.md
+                          - Operational Controls: initiatives/u360/business-lines/casualty/products/gl/operational-controls.md
+          - Common Capabilities:
+              - Producer Hub: initiatives/u360/common-capabilities/producer-hub.md
+              - Account Hub: initiatives/u360/common-capabilities/account-hub.md
+              - Forms Governance: initiatives/u360/common-capabilities/forms-governance.md
+              - Audit Trail: initiatives/u360/common-capabilities/audit-trail.md
+              - Legal Notice Odin: initiatives/u360/common-capabilities/legal-notice-odin.md
+              - RBAC Multi Tenancy: initiatives/u360/common-capabilities/rbac-multi-tenancy.md
+              - AI Driven Unified Interface Integration: initiatives/u360/common-capabilities/ai-driven-unified-interface-integration.md
+              - Shared Referral Workflow: initiatives/u360/common-capabilities/shared-referral-workflow.md
+
+  - Templates:
+      - Initiative Overview Template: templates/initiative-overview-template.md
+      - Application Business View Template: templates/application-business-view-template.md
+      - Application Technical View Template: templates/application-technical-view-template.md
+      - Operational Controls Template: templates/operational-controls-template.md
+      - Control Mapping Template: templates/control-mapping-template.md
+      - Evidence Index Template: templates/evidence-index-template.md
+      - Risk Register Template: templates/risk-register-template.md
+      - Decision Log Template: templates/decision-log-template.md
+      - Policy Mapping Template: templates/policy-mapping-template.md
+      - Cutover Readiness Template: templates/cutover-readiness-template.md
+      - Benefits Realization Template: templates/benefits-realization-template.md
+      - Audit RACI Template: templates/audit-raci-template.md
+      - Legacy Retirement and SOR Mapping Template: templates/legacy-retirement-and-sor-mapping-template.md
+      - Business Line Business View Template: templates/business-line-business-view-template.md
+      - Business Line Technical View Template: templates/business-line-technical-view-template.md
+      - Product Business View Template: templates/product-business-view-template.md
+      - Product Technical View Template: templates/product-technical-view-template.md
