@@ -7,6 +7,7 @@ repo_name: Underwriting-documentation-portal
 docs_dir: docs
 theme:
   name: material
+  custom_dir: overrides
 nav:
   - Home: index.md
   - Portfolio Overview: portfolio-overview.md
