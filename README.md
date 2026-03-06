@@ -32,11 +32,13 @@ Deployment to GitHub Pages happens automatically via GitHub Actions whenever cha
 
 To trigger a manual deployment, go to **Actions → Deploy MkDocs to GitHub Pages → Run workflow**.
 
-### GitHub Pages Configuration
+### GitHub Pages Configuration Required
 
-In the repository **Settings → Pages**:
-- **Source**: Deploy from a branch
-- **Branch**: `gh-pages` / `/ (root)`
+After merging, configure GitHub Pages in the repository settings:
+
+1. Go to **Settings → Pages**
+2. Set **Source**: Deploy from a branch
+3. Set **Branch**: `gh-pages` / `/ (root)`
 
 The workflow uses `mkdocs gh-deploy` which pushes the built site to the `gh-pages` branch automatically.
 
