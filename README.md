@@ -1,4 +1,4 @@
-# Underwriting Documentation Portal Starter v4
+# Underwriting Documentation Portal Starter
 
 This package provides a fuller starter structure for an underwriting documentation portal using MkDocs Material.
 
