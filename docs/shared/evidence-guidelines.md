@@ -1,3 +1,3 @@
 # Evidence Guidelines
 
-Add shared reference content here.
+Describe what qualifies as evidence, how it should be referenced, and how often it should be refreshed.

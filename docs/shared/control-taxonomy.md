@@ -1,3 +1,3 @@
 # Control Taxonomy
 
-Add shared reference content here.
+Define preventive, detective, reconciliation, access, and change control categories used in the portal.

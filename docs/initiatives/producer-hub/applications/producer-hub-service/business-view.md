@@ -1,60 +1,63 @@
 # Producer Hub Service - Business View
 
 ## Purpose
-Provide a standardized producer lookup and validation capability for underwriting applications and platform workflows.
+Describe the business purpose of Producer Hub and how it supports producer lookup and validation.
 
 ## Business Problem Solved
-Today, producer information may be validated manually or inconsistently. Producer Hub creates a single shared integration approach.
+This application addresses gaps in workflow consistency, visibility, and operational traceability by providing a documented baseline for business and support stakeholders.
 
 ## Parent Initiative
 - **Parent Initiative:** Producer Hub
-- **Business Area:** Shared Underwriting Service
 
 ## Targeted Users
-| User Group | Role | How They Use the Application |
-|---|---|---|
-| Underwriters | Consumer | Validate producer information during intake or review |
-| Operations | Consumer | Resolve data issues and support workflows |
-| U360 Services | System consumer | Retrieve producer data through APIs |
+Underwriters, operations, systems
 
 ## Business Capabilities
-- producer search
-- producer validation
-- producer profile retrieval
+- core workflow support
+- decision and data support
+- operational visibility
+- control traceability
 
 ## Process Flow
-1. User or system requests producer validation.
-2. Producer Hub retrieves and validates available information.
-3. Response is returned to the consuming workflow.
-4. Exceptions are logged for follow-up.
+1. business event or request is initiated
+2. relevant data is validated or retrieved
+3. workflow or decision logic is applied
+4. outcome is recorded and communicated
 
 ## Inputs and Outputs
 ### Inputs
-| Input | Source | Description |
-|---|---|---|
-| Producer identifier | Underwriting app / U360 | Used to retrieve producer details |
+- user or system request
+- reference or master data
+- workflow context
 
 ### Outputs
-| Output | Consumer | Description |
-|---|---|---|
-| Producer validation response | Consuming app | Validation result and producer details |
+- updated status or decision
+- downstream notification or handoff
+- audit-relevant event or record
 
 ## Key Business Rules
-| Rule / Control | Description | Trigger | Outcome |
-|---|---|---|---|
-| Required producer match | Producer must be found before workflow proceeds | Validation request | Success or exception handling |
+- required inputs must be present before progression
+- exception conditions must be handled consistently
+- significant actions should be traceable
 
 ## Operational Value
-Improves speed, consistency, and control over producer validation.
+Creates a more consistent operating model and improves supportability and audit readiness.
 
 ## Dependencies
-| Dependency | Type | Why It Matters |
-|---|---|---|
-| Producer source | System | Supplies master/reference data |
-| U360 | Platform | Major consumer of the service |
+producer source systems, UWWB
 
 ## User Impact / Change Considerations
-Reduces manual verification and creates a more consistent experience across applications.
+Users benefit from more consistent workflow behavior and clearer operational ownership. Training and process updates may be needed as the documentation matures.
+
+## Roadmap / Known Gaps
+- enrich detailed workflow examples
+- add product or service-specific examples
+- add evidence references
+
+## Ownership
+- Business owner: <Name / Team>
+- Product owner: <Name / Team>
+- SME contact: <Name / Team>
 
 ## Audit-Relevant Notes
-Producer validation failures and access activity should be logged for control review.
+Manual approvals, exception paths, and audit-relevant business events should be documented as the initiative matures.

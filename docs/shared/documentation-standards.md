@@ -1,3 +1,3 @@
 # Documentation Standards
 
-Add shared reference content here.
+Describe required documentation layers, review expectations, and naming conventions.

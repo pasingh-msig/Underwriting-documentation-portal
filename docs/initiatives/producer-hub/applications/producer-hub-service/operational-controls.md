@@ -1,32 +1,50 @@
 # Producer Hub Service - Operational Controls
 
 ## Control Overview
-The service must ensure authorized access, reliable interface handling, and traceable validation activity.
+Document the key preventive, detective, and support controls for Producer Hub.
 
 ## Preventive Controls
 | Control ID | Control Name | Description | Owner | Frequency | Evidence |
 |---|---|---|---|---|---|
-| PC-01 | API Authentication | Only approved consumers can call the service | Tech Owner | Continuous | Auth configuration and access review |
+| PC-01 | Access Control | Only approved users and systems can access the application | <Owner> | Continuous | Access records |
+| PC-02 | Release Control | Changes follow controlled release process | <Owner> | Per release | Change record |
 
 ## Detective Controls
 | Control ID | Control Name | Description | Owner | Frequency | Evidence |
 |---|---|---|---|---|---|
-| DC-01 | API Failure Monitoring | Alerts on elevated error rate or unavailable upstream source | Support Owner | Continuous | Monitoring dashboard |
+| DC-01 | Failure Monitoring | Failed processing or integration issues generate alerts | <Owner> | Continuous | Monitoring dashboard |
 
 ## Access Controls
-| Control ID | Control Name | Description | Owner | Provisioning Method | Evidence |
-|---|---|---|---|---|---|
-| AC-01 | Consumer Access Approval | Consumer access approved before onboarding | Product Owner | Managed request process | Approval records |
+- user access follows approved provisioning process
+- elevated access is restricted and reviewable
 
 ## Change Controls
-| Control ID | Control Name | Description | Owner | Trigger | Evidence |
-|---|---|---|---|---|---|
-| CC-01 | Release Approval | Production changes reviewed before deployment | Tech Owner | Release | Change ticket |
+- production changes require review and approval
+- emergency changes should be documented and reviewed afterward
 
 ## Interface / Batch Controls
-| Control ID | Interface / Job | Control Description | Failure Detection | Recovery Method | Evidence |
-|---|---|---|---|---|---|
-| IF-01 | Producer source API | Failed interface calls are logged and alerted | Alerting | Retry and support escalation | Monitoring logs |
+- interface failures are detected through monitoring
+- recovery actions are documented through support process
+
+## Reconciliation Controls
+- key status or processing counts should be reviewed where applicable
 
 ## Logging and Audit Trail Controls
-Validation requests, auth events, and failure responses are logged with timestamps and correlation IDs.
+Significant processing events, failures, and exception handling should be logged.
+
+## Incident and Escalation Controls
+Incidents are triaged by L1 and escalated to higher support tiers as needed.
+
+## Control Exceptions
+Exceptions should be approved, logged, and reviewed.
+
+## Related Risks
+- dependency outages
+- incomplete evidence linkage
+- support coverage gaps
+
+## Evidence References
+- monitoring dashboard
+- change records
+- access reviews
+- incident tickets

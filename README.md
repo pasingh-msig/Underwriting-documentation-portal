@@ -1,9 +1,16 @@
-# Underwriting Documentation Portal
-This repository is the centralized documentation portal for the underwriting portfolio. It provides a consistent and scalable structure for documenting standalone initiatives, shared services, and the UWWB platform across business, technical, operational, and audit dimensions. The repository is intended to support product, engineering, architecture, support, governance, and audit stakeholders through a single source of truth.
+# Underwriting Documentation Portal Starter v4
+
+This package provides a fuller starter structure for an underwriting documentation portal using MkDocs Material.
 
 ## Included
 - `mkdocs.yml`
 - shared standards pages
 - reusable templates
-- corporate-style audit template guidance
-- audit/control starter docs
+- richer sample folders for all agreed standalone initiatives
+- fuller UWWB platform sample with business line and product examples
+- audit/control starter docs for each initiative
+
+## What changed in v4
+- richer sample content for each initiative
+- fuller business, technical, and control examples
+- UWWB retained as the platform naming standard

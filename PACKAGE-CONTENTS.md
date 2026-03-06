@@ -1,26 +1,29 @@
 # Package Contents
 
-## Included samples
-### Standalone sample
-- `docs/initiatives/producer-hub/`
-  - initiative overview
-  - business view
-  - technical view
-  - operational controls
-  - control mapping
-  - evidence index
-  - risk and controls
+## Included updates in v4
+- richer sample content for all agreed standalone initiatives
+- fuller business, technical, and operational control examples
+- fuller UWWB platform sample
+- templates and shared standards retained
 
-### U360 sample
-- `docs/initiatives/u360/`
-  - initiative overview
-  - platform overview
-  - audit section
-  - shared section
-  - casualty business line
-  - GL product sample with business, technical, and operational controls
+## Standalone initiatives included
+- Tower Pricing
+- Renewal Tracker
+- Underwriting Intelligence Center
+- Producer Hub
+- Account Hub
+- Forms Governance
+- Pricing Guidance Tools
+- Legal Notice Odin Integration
+- RBAC Multi Tenancy
+- AI Driven Unified Interface
+- Convr
 
-## How to expand
-1. Copy the template files under `docs/templates/`.
-2. Duplicate the standalone or U360 sample folder as your starting point.
-3. Update `mkdocs.yml` navigation when you add new initiatives, business lines, or products.
+## Platform sample included
+- UWWB
+  - audit
+  - shared
+  - Financial Lines
+  - Casualty
+  - GL, Auto, Excess, Umbrella
+  - common capabilities

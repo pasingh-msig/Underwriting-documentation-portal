@@ -1,73 +1,62 @@
 # Producer Hub - Initiative Overview
 
 ## Purpose
-Producer Hub is a shared underwriting service used to validate and retrieve producer information needed by underwriting workflows and platform integrations.
+Producer Hub supports producer lookup and validation within the underwriting portfolio.
 
 ## Business Objective
-Provide a consistent producer data service that reduces manual validation, improves data quality, and supports downstream underwriting decisions.
+Establish a documented baseline for Producer Hub so business, technical, support, and audit stakeholders can work from the same source of truth.
 
 ## Strategic Alignment
-Producer Hub supports the underwriting modernization roadmap by providing a reusable integration capability across standalone applications and U360.
+Producer Hub contributes to underwriting modernization by improving standardization, visibility, and integration readiness across the portfolio.
 
 ## Status
-**Current Status:** In Progress
+**Current Status:** Draft baseline
 
 ## Scope
 ### In Scope
-- producer lookup
-- producer validation
-- producer profile retrieval for underwriting workflows
+- initiative overview
+- application-level business and technical documentation
+- operational controls
+- audit traceability baseline
 
 ### Out of Scope
-- producer commission processing
-- producer onboarding outside underwriting usage
+- deep implementation detail outside the primary sample application
+- historical migration detail
 
 ## Initiative Type
-- Shared Service
-- Integration
-
-## Target Operating Role
-Shared service used by underwriting applications and U360 to retrieve and validate producer information.
-
-## Relationship to Legacy Systems
-Producer Hub standardizes access to producer information while source systems continue to own the data.
+- Application
+- Service
 
 ## Applications / Components
 | Component | Type | Purpose | Owner |
 |---|---|---|---|
-| Producer Hub Service | Service | Producer validation and lookup API | Integration Team |
+| Producer Hub Service | Application / Service | Primary documented component for Producer Hub | <Owner> |
 
 ## Stakeholders
 | Role | Name / Team | Responsibility |
 |---|---|---|
-| Business Owner | Underwriting Operations | Business sponsorship |
-| Product Owner | Producer Hub Product | Prioritization |
-| Technology Owner | Integration Engineering | Delivery ownership |
-| Architecture Owner | Enterprise Architecture | Design oversight |
-| Support Owner | Application Support | Production support |
-| Control Owner | Risk and Controls | Control accountability |
+| Business Owner | <Name / Team> | Business sponsorship |
+| Product Owner | <Name / Team> | Prioritization and backlog |
+| Technology Owner | <Name / Team> | Technical delivery |
+| Support Owner | <Name / Team> | Production support |
+| Control Owner | <Name / Team> | Control readiness |
 
 ## Dependencies
-| Dependency | Type | Purpose | Criticality | Owner |
-|---|---|---|---|---|
-| Upstream producer source | System | Producer master/reference data | High | External owner |
-| U360 | Platform | Consumer of producer data | High | U360 team |
+Primary dependencies include producer source systems, UWWB.
 
 ## Roadmap
-| Milestone / Phase | Description | Target Date | Status |
-|---|---|---|---|
-| API baseline | Core producer lookup and validation | 2026-Q2 | In Progress |
-| U360 integration | Shared capability consumption | 2026-Q3 | Planned |
+- establish baseline documentation
+- refine technical and control content
+- add evidence references and support artifacts
 
 ## Success Metrics / Expected Benefits
-| Benefit | KPI | Baseline | Target | Owner |
-|---|---|---|---|---|
-| Reduced manual validation | % manual producer lookups | High manual effort | 50% reduction | Product Owner |
+- improved documentation consistency
+- easier onboarding and support readiness
+- stronger audit traceability
 
 ## Key Risks / Open Questions
-| ID | Risk / Question | Impact | Owner | Mitigation / Next Step | Status |
-|---|---|---|---|---|---|
-| R1 | Source system response latency | Integration delays | Tech Owner | Add retry and timeout design | Open |
+- source details may still need refinement
+- ownership and evidence cadence may need confirmation
 
 ## Audit / Compliance References
 - [Control Mapping](./audit/control-mapping.md)

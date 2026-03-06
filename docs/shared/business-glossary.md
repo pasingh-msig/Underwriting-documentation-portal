@@ -1,3 +1,3 @@
 # Business Glossary
 
-Add shared reference content here.
+Capture business terms, acronyms, and underwriting terminology used across the portfolio.

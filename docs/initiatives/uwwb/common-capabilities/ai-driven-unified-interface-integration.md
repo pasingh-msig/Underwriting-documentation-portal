@@ -1,0 +1,10 @@
+# Ai Driven Unified Interface Integration
+
+## Purpose
+Document how UWWB uses Ai Driven Unified Interface Integration as a shared capability.
+
+## Integration Considerations
+- business dependency
+- technical interface pattern
+- failure handling and support ownership
+- control and evidence implications

@@ -1,15 +1,15 @@
 # Producer Hub Service - Technical View
 
 ## Technical Summary
-Producer Hub Service exposes API-based producer lookup and validation capabilities to underwriting applications and U360.
+Producer Hub is documented as a primary application or service supporting producer lookup and validation.
 
 ## Technical Architecture
 ### Components
 | Component | Type | Purpose | Owner |
 |---|---|---|---|
-| Producer Hub API | API | Expose producer lookup/validation | Integration Engineering |
-| Source Adapter | Service | Connect to producer source data | Integration Engineering |
-| Audit Logger | Service | Log requests and outcomes | Shared Services |
+| Producer Hub Service UI / Service | Application / Service | Primary user or system-facing component | <Owner> |
+| Integration layer | API / Service | Connects to dependent systems | <Owner> |
+| Logging / Audit component | Shared service | Captures operational and audit events | <Owner> |
 
 ### Environments
 - Development
@@ -18,77 +18,58 @@ Producer Hub Service exposes API-based producer lookup and validation capabiliti
 - Production
 
 ### Deployment Model
-Containerized service deployed through standard CI/CD.
-
-### Hosting / Runtime
-Cloud-hosted internal service.
+Standard application deployment through controlled release process.
 
 ## API Layer Specification
-### API Overview
-- **API Style:** REST
-
-### Endpoint Catalog
 | API Name | Method | Endpoint | Consumer | Purpose | Auth | Version | Owner |
 |---|---|---|---|---|---|---|---|
-| Producer Lookup | GET | /producers/{id} | Underwriting apps, U360 | Retrieve producer profile | OAuth2 | v1 | Integration Engineering |
-| Producer Validation | POST | /producer-validation | Underwriting apps, U360 | Validate producer information | OAuth2 | v1 | Integration Engineering |
-
-### Request / Response Model
-JSON request and response payloads with standard error object and correlation ID.
-
-### Error Handling
-Retry on transient upstream failure; clear error codes for no-match and unavailable-source conditions.
-
-### Observability
-Request logs, correlation IDs, API metrics, and failure alerts.
+| Sample API | GET | /sample | Internal consumer | Sample endpoint for Producer Hub | OAuth2 | v1 | <Owner> |
+| Status API | GET | /status | Support / monitoring | Health and status lookup | OAuth2 | v1 | <Owner> |
 
 ## Business Logic Build
-Validation logic checks required identifiers, availability, and match status before returning a response.
+The application applies validation, routing, and status management logic relevant to producer lookup and validation. Rules may be implemented in service logic, configuration, or controlled workflow steps.
 
 ## External Integrations
 | System | Direction | Protocol | Data Exchanged | Frequency | Failure Handling | Owner |
 |---|---|---|---|---|---|---|
-| Producer source | Inbound | API | Producer reference data | Real time | Retry and alert | Integration Engineering |
-| U360 | Outbound | API | Validation response | Real time | Return error and log | U360 team |
+| Primary dependency | Bi-directional | API | Reference and transaction context | Real time | Retry and alert | <Owner> |
+| Logging / monitoring | Outbound | Event / API | Operational telemetry | Real time | Queue and alert | <Owner> |
 
 ## Database Specifications
-### Technology
-Minimal persistence for logging and audit metadata.
-
-### Key Schemas / Tables / Entities
-| Entity / Table | Purpose | Key Fields | Notes |
-|---|---|---|---|
-| request_log | Track request/response metadata | request_id, timestamp | For observability |
-| validation_event | Track validation outcomes | event_id, producer_id, status | For audit trail |
-
-### Retention and Archival
-Logs retained per enterprise logging policy.
-
-### Backup / Recovery
-Managed via platform logging and database support standards.
+- primary persistence for transaction or status tracking
+- audit or logging records retained per policy
+- backup and recovery follow platform standards
 
 ## Security and Access Control
-### Authentication
-OAuth2 for service and user-backed requests.
-
-### Authorization
-Role-based access for approved consumers.
-
-### Privileged Access
-Admin access restricted to support teams.
-
-### Audit Logging
-All producer validation requests and key outcomes are logged.
-
-### Data Classification
-Business confidential.
+- authenticated users and systems only
+- role-based or service-based authorization
+- significant events logged for traceability
 
 ## Production Support Details
-| Support Area | Owner / Team | Notes |
-|---|---|---|
-| L1 Support | Application Support | Initial incident triage |
-| L2 Support | Integration Engineering | Service troubleshooting |
-| L3 Support | Platform Engineering | Platform/runtime issues |
+- L1 support: <Team>
+- L2 support: <Team>
+- L3 support: <Team>
+- monitoring: dashboards and alerts for availability, failures, and degraded processing
 
 ## Control-Relevant Technical Requirements
-Correlation IDs, auth logs, error monitoring, and validation event logging.
+- request and error logging
+- retry or recovery behavior for failed integrations
+- evidence-producing events for support and audit review
+
+## Non-Functional Requirements
+- availability target aligned to business criticality
+- performance suitable for near real-time workflow support
+- observability through logs and alerts
+
+## Known Gaps / Tech Debt
+- detailed payload examples can be added later
+- support runbook references can be expanded
+
+## Ownership
+- Application owner: <Name / Team>
+- Tech lead: <Name / Team>
+- Support owner: <Name / Team>
+
+## Related Audit / Control Documents
+- [Operational Controls](./operational-controls.md)
+- [Control Mapping](../../audit/control-mapping.md)

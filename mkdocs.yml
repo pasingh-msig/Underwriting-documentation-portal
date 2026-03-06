@@ -1,30 +1,13 @@
 site_name: Underwriting Documentation Portal
-site_description: Documentation portal for underwriting initiatives, U360, shared capabilities, and audit evidence
+site_description: Documentation portal for underwriting initiatives, UWWB, shared capabilities, and audit evidence
 site_author: MSIG Underwriting
 repo_name: underwriting-docs-portal
 docs_dir: docs
 theme:
   name: material
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - navigation.indexes
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-
-markdown_extensions:
-  - admonition
-  - attr_list
-  - tables
-  - toc:
-      permalink: true
-
 nav:
   - Home: index.md
   - Portfolio Overview: portfolio-overview.md
-
   - Shared Standards:
       - Business Glossary: shared/business-glossary.md
       - Architecture Principles: shared/architecture-principles.md
@@ -36,8 +19,40 @@ nav:
       - Control Taxonomy: shared/control-taxonomy.md
       - Evidence Guidelines: shared/evidence-guidelines.md
       - Audit Template Guidance: shared/audit-template-guidance.md
-
   - Initiatives:
+      - Tower Pricing:
+          - Initiative Overview: initiatives/tower-pricing/initiative-overview.md
+          - Audit:
+              - Control Mapping: initiatives/tower-pricing/audit/control-mapping.md
+              - Evidence Index: initiatives/tower-pricing/audit/evidence-index.md
+              - Risk and Controls: initiatives/tower-pricing/audit/risk-and-controls.md
+          - Applications:
+              - Tower Pricing App:
+                  - Business View: initiatives/tower-pricing/applications/tower-pricing-app/business-view.md
+                  - Technical View: initiatives/tower-pricing/applications/tower-pricing-app/technical-view.md
+                  - Operational Controls: initiatives/tower-pricing/applications/tower-pricing-app/operational-controls.md
+      - Renewal Tracker:
+          - Initiative Overview: initiatives/renewal-tracker/initiative-overview.md
+          - Audit:
+              - Control Mapping: initiatives/renewal-tracker/audit/control-mapping.md
+              - Evidence Index: initiatives/renewal-tracker/audit/evidence-index.md
+              - Risk and Controls: initiatives/renewal-tracker/audit/risk-and-controls.md
+          - Applications:
+              - Renewal Tracker App:
+                  - Business View: initiatives/renewal-tracker/applications/renewal-tracker-app/business-view.md
+                  - Technical View: initiatives/renewal-tracker/applications/renewal-tracker-app/technical-view.md
+                  - Operational Controls: initiatives/renewal-tracker/applications/renewal-tracker-app/operational-controls.md
+      - Underwriting Intelligence Center:
+          - Initiative Overview: initiatives/underwriting-intelligence-center/initiative-overview.md
+          - Audit:
+              - Control Mapping: initiatives/underwriting-intelligence-center/audit/control-mapping.md
+              - Evidence Index: initiatives/underwriting-intelligence-center/audit/evidence-index.md
+              - Risk and Controls: initiatives/underwriting-intelligence-center/audit/risk-and-controls.md
+          - Applications:
+              - Intelligence Center:
+                  - Business View: initiatives/underwriting-intelligence-center/applications/intelligence-center/business-view.md
+                  - Technical View: initiatives/underwriting-intelligence-center/applications/intelligence-center/technical-view.md
+                  - Operational Controls: initiatives/underwriting-intelligence-center/applications/intelligence-center/operational-controls.md
       - Producer Hub:
           - Initiative Overview: initiatives/producer-hub/initiative-overview.md
           - Audit:
@@ -49,55 +64,139 @@ nav:
                   - Business View: initiatives/producer-hub/applications/producer-hub-service/business-view.md
                   - Technical View: initiatives/producer-hub/applications/producer-hub-service/technical-view.md
                   - Operational Controls: initiatives/producer-hub/applications/producer-hub-service/operational-controls.md
-
-      - U360:
-          - Initiative Overview: initiatives/u360/initiative-overview.md
-          - Platform Overview: initiatives/u360/platform-overview.md
+      - Account Hub:
+          - Initiative Overview: initiatives/account-hub/initiative-overview.md
           - Audit:
-              - Audit Index: initiatives/u360/audit/audit-index.md
-              - Control Mapping: initiatives/u360/audit/control-mapping.md
-              - Evidence Index: initiatives/u360/audit/evidence-index.md
-              - Audit RACI: initiatives/u360/audit/audit-raci.md
-              - Risk Register: initiatives/u360/audit/risk-register.md
-              - Decision Log: initiatives/u360/audit/decision-log.md
-              - Compliance and Policy Mapping: initiatives/u360/audit/compliance-and-policy-mapping.md
-              - Cutover Readiness Pack: initiatives/u360/audit/cutover-readiness-pack.md
-              - Benefits Realization Plan: initiatives/u360/audit/benefits-realization-plan.md
-              - Legacy Retirement and SOR Mapping: initiatives/u360/audit/legacy-retirement-and-sor-mapping.md
+              - Control Mapping: initiatives/account-hub/audit/control-mapping.md
+              - Evidence Index: initiatives/account-hub/audit/evidence-index.md
+              - Risk and Controls: initiatives/account-hub/audit/risk-and-controls.md
+          - Applications:
+              - Account Hub Service:
+                  - Business View: initiatives/account-hub/applications/account-hub-service/business-view.md
+                  - Technical View: initiatives/account-hub/applications/account-hub-service/technical-view.md
+                  - Operational Controls: initiatives/account-hub/applications/account-hub-service/operational-controls.md
+      - Forms Governance:
+          - Initiative Overview: initiatives/forms-governance/initiative-overview.md
+          - Audit:
+              - Control Mapping: initiatives/forms-governance/audit/control-mapping.md
+              - Evidence Index: initiatives/forms-governance/audit/evidence-index.md
+              - Risk and Controls: initiatives/forms-governance/audit/risk-and-controls.md
+          - Applications:
+              - Forms Governance App:
+                  - Business View: initiatives/forms-governance/applications/forms-governance-app/business-view.md
+                  - Technical View: initiatives/forms-governance/applications/forms-governance-app/technical-view.md
+                  - Operational Controls: initiatives/forms-governance/applications/forms-governance-app/operational-controls.md
+      - Pricing Guidance Tools:
+          - Initiative Overview: initiatives/pricing-guidance-tools/initiative-overview.md
+          - Audit:
+              - Control Mapping: initiatives/pricing-guidance-tools/audit/control-mapping.md
+              - Evidence Index: initiatives/pricing-guidance-tools/audit/evidence-index.md
+              - Risk and Controls: initiatives/pricing-guidance-tools/audit/risk-and-controls.md
+          - Applications:
+              - Pricing Guidance Engine:
+                  - Business View: initiatives/pricing-guidance-tools/applications/pricing-guidance-engine/business-view.md
+                  - Technical View: initiatives/pricing-guidance-tools/applications/pricing-guidance-engine/technical-view.md
+                  - Operational Controls: initiatives/pricing-guidance-tools/applications/pricing-guidance-engine/operational-controls.md
+      - Legal Notice Odin Integration:
+          - Initiative Overview: initiatives/legal-notice-odin-integration/initiative-overview.md
+          - Audit:
+              - Control Mapping: initiatives/legal-notice-odin-integration/audit/control-mapping.md
+              - Evidence Index: initiatives/legal-notice-odin-integration/audit/evidence-index.md
+              - Risk and Controls: initiatives/legal-notice-odin-integration/audit/risk-and-controls.md
+          - Applications:
+              - Legal Notice Service:
+                  - Business View: initiatives/legal-notice-odin-integration/applications/legal-notice-service/business-view.md
+                  - Technical View: initiatives/legal-notice-odin-integration/applications/legal-notice-service/technical-view.md
+                  - Operational Controls: initiatives/legal-notice-odin-integration/applications/legal-notice-service/operational-controls.md
+      - RBAC Multi Tenancy:
+          - Initiative Overview: initiatives/rbac-multi-tenancy/initiative-overview.md
+          - Audit:
+              - Control Mapping: initiatives/rbac-multi-tenancy/audit/control-mapping.md
+              - Evidence Index: initiatives/rbac-multi-tenancy/audit/evidence-index.md
+              - Risk and Controls: initiatives/rbac-multi-tenancy/audit/risk-and-controls.md
+          - Applications:
+              - Access Control Service:
+                  - Business View: initiatives/rbac-multi-tenancy/applications/access-control-service/business-view.md
+                  - Technical View: initiatives/rbac-multi-tenancy/applications/access-control-service/technical-view.md
+                  - Operational Controls: initiatives/rbac-multi-tenancy/applications/access-control-service/operational-controls.md
+      - AI Driven Unified Interface:
+          - Initiative Overview: initiatives/ai-driven-unified-interface/initiative-overview.md
+          - Audit:
+              - Control Mapping: initiatives/ai-driven-unified-interface/audit/control-mapping.md
+              - Evidence Index: initiatives/ai-driven-unified-interface/audit/evidence-index.md
+              - Risk and Controls: initiatives/ai-driven-unified-interface/audit/risk-and-controls.md
+          - Applications:
+              - Unified Interface:
+                  - Business View: initiatives/ai-driven-unified-interface/applications/unified-interface/business-view.md
+                  - Technical View: initiatives/ai-driven-unified-interface/applications/unified-interface/technical-view.md
+                  - Operational Controls: initiatives/ai-driven-unified-interface/applications/unified-interface/operational-controls.md
+      - Convr:
+          - Initiative Overview: initiatives/convr/initiative-overview.md
+          - Audit:
+              - Control Mapping: initiatives/convr/audit/control-mapping.md
+              - Evidence Index: initiatives/convr/audit/evidence-index.md
+              - Risk and Controls: initiatives/convr/audit/risk-and-controls.md
+          - Applications:
+              - Convr Service:
+                  - Business View: initiatives/convr/applications/convr-service/business-view.md
+                  - Technical View: initiatives/convr/applications/convr-service/technical-view.md
+                  - Operational Controls: initiatives/convr/applications/convr-service/operational-controls.md
+      - UWWB:
+          - Initiative Overview: initiatives/uwwb/initiative-overview.md
+          - Platform Overview: initiatives/uwwb/platform-overview.md
+          - Audit:
+              - Audit Index: initiatives/uwwb/audit/audit-index.md
+              - Control Mapping: initiatives/uwwb/audit/control-mapping.md
+              - Evidence Index: initiatives/uwwb/audit/evidence-index.md
+              - Audit RACI: initiatives/uwwb/audit/audit-raci.md
+              - Risk Register: initiatives/uwwb/audit/risk-register.md
+              - Decision Log: initiatives/uwwb/audit/decision-log.md
+              - Compliance and Policy Mapping: initiatives/uwwb/audit/compliance-and-policy-mapping.md
+              - Cutover Readiness Pack: initiatives/uwwb/audit/cutover-readiness-pack.md
+              - Benefits Realization Plan: initiatives/uwwb/audit/benefits-realization-plan.md
+              - Legacy Retirement and SOR Mapping: initiatives/uwwb/audit/legacy-retirement-and-sor-mapping.md
           - Shared:
-              - Shared Architecture: initiatives/u360/shared/shared-architecture.md
-              - Shared API Standards: initiatives/u360/shared/shared-api-standards.md
-              - Shared Security Model: initiatives/u360/shared/shared-security-model.md
-              - Shared Integrations: initiatives/u360/shared/shared-integrations.md
-              - Shared Data Domains: initiatives/u360/shared/shared-data-domains.md
-              - Shared Production Support: initiatives/u360/shared/shared-production-support.md
-              - Operational Controls: initiatives/u360/shared/operational-controls.md
+              - Shared Architecture: initiatives/uwwb/shared/shared-architecture.md
+              - Shared API Standards: initiatives/uwwb/shared/shared-api-standards.md
+              - Shared Security Model: initiatives/uwwb/shared/shared-security-model.md
+              - Shared Integrations: initiatives/uwwb/shared/shared-integrations.md
+              - Shared Data Domains: initiatives/uwwb/shared/shared-data-domains.md
+              - Shared Production Support: initiatives/uwwb/shared/shared-production-support.md
+              - Operational Controls: initiatives/uwwb/shared/operational-controls.md
           - Business Lines:
               - Financial Lines:
-                  - Overview: initiatives/u360/business-lines/financial-lines/overview.md
-                  - Business View: initiatives/u360/business-lines/financial-lines/business-view.md
-                  - Technical View: initiatives/u360/business-lines/financial-lines/technical-view.md
-                  - Controls and Risks: initiatives/u360/business-lines/financial-lines/controls-and-risks.md
+                  - Overview: initiatives/uwwb/business-lines/financial-lines/overview.md
+                  - Business View: initiatives/uwwb/business-lines/financial-lines/business-view.md
+                  - Technical View: initiatives/uwwb/business-lines/financial-lines/technical-view.md
+                  - Controls and Risks: initiatives/uwwb/business-lines/financial-lines/controls-and-risks.md
               - Casualty:
-                  - Overview: initiatives/u360/business-lines/casualty/overview.md
-                  - Business View: initiatives/u360/business-lines/casualty/business-view.md
-                  - Technical View: initiatives/u360/business-lines/casualty/technical-view.md
-                  - Controls and Risks: initiatives/u360/business-lines/casualty/controls-and-risks.md
+                  - Overview: initiatives/uwwb/business-lines/casualty/overview.md
+                  - Business View: initiatives/uwwb/business-lines/casualty/business-view.md
+                  - Technical View: initiatives/uwwb/business-lines/casualty/technical-view.md
+                  - Controls and Risks: initiatives/uwwb/business-lines/casualty/controls-and-risks.md
                   - Products:
                       - GL:
-                          - Business View: initiatives/u360/business-lines/casualty/products/gl/business-view.md
-                          - Technical View: initiatives/u360/business-lines/casualty/products/gl/technical-view.md
-                          - Operational Controls: initiatives/u360/business-lines/casualty/products/gl/operational-controls.md
+                          - Business View: initiatives/uwwb/business-lines/casualty/products/gl/business-view.md
+                          - Technical View: initiatives/uwwb/business-lines/casualty/products/gl/technical-view.md
+                          - Operational Controls: initiatives/uwwb/business-lines/casualty/products/gl/operational-controls.md
+                      - Auto:
+                          - Business View: initiatives/uwwb/business-lines/casualty/products/auto/business-view.md
+                          - Technical View: initiatives/uwwb/business-lines/casualty/products/auto/technical-view.md
+                      - Excess:
+                          - Business View: initiatives/uwwb/business-lines/casualty/products/excess/business-view.md
+                          - Technical View: initiatives/uwwb/business-lines/casualty/products/excess/technical-view.md
+                      - Umbrella:
+                          - Business View: initiatives/uwwb/business-lines/casualty/products/umbrella/business-view.md
+                          - Technical View: initiatives/uwwb/business-lines/casualty/products/umbrella/technical-view.md
           - Common Capabilities:
-              - Producer Hub: initiatives/u360/common-capabilities/producer-hub.md
-              - Account Hub: initiatives/u360/common-capabilities/account-hub.md
-              - Forms Governance: initiatives/u360/common-capabilities/forms-governance.md
-              - Audit Trail: initiatives/u360/common-capabilities/audit-trail.md
-              - Legal Notice Odin: initiatives/u360/common-capabilities/legal-notice-odin.md
-              - RBAC Multi Tenancy: initiatives/u360/common-capabilities/rbac-multi-tenancy.md
-              - AI Driven Unified Interface Integration: initiatives/u360/common-capabilities/ai-driven-unified-interface-integration.md
-              - Shared Referral Workflow: initiatives/u360/common-capabilities/shared-referral-workflow.md
-
+              - Producer Hub: initiatives/uwwb/common-capabilities/producer-hub.md
+              - Account Hub: initiatives/uwwb/common-capabilities/account-hub.md
+              - Forms Governance: initiatives/uwwb/common-capabilities/forms-governance.md
+              - Audit Trail: initiatives/uwwb/common-capabilities/audit-trail.md
+              - Legal Notice Odin: initiatives/uwwb/common-capabilities/legal-notice-odin.md
+              - RBAC Multi Tenancy: initiatives/uwwb/common-capabilities/rbac-multi-tenancy.md
+              - AI Driven Unified Interface Integration: initiatives/uwwb/common-capabilities/ai-driven-unified-interface-integration.md
+              - Shared Referral Workflow: initiatives/uwwb/common-capabilities/shared-referral-workflow.md
   - Templates:
       - Initiative Overview Template: templates/initiative-overview-template.md
       - Application Business View Template: templates/application-business-view-template.md
@@ -110,8 +209,8 @@ nav:
       - Policy Mapping Template: templates/policy-mapping-template.md
       - Cutover Readiness Template: templates/cutover-readiness-template.md
       - Benefits Realization Template: templates/benefits-realization-template.md
-      - Audit RACI Template: templates/audit-raci-template.md
-      - Legacy Retirement and SOR Mapping Template: templates/legacy-retirement-and-sor-mapping-template.md
+      - Audit Raci Template: templates/audit-raci-template.md
+      - Legacy Retirement And Sor Mapping Template: templates/legacy-retirement-and-sor-mapping-template.md
       - Business Line Business View Template: templates/business-line-business-view-template.md
       - Business Line Technical View Template: templates/business-line-technical-view-template.md
       - Product Business View Template: templates/product-business-view-template.md

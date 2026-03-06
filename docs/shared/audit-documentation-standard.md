@@ -1,3 +1,3 @@
 # Audit Documentation Standard
 
-Add shared reference content here.
+Describe how control, evidence, risk, and policy documents should be maintained.
