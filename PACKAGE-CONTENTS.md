@@ -1,11 +1,4 @@
 # Package Contents
-
-## Included updates in v4
-- richer sample content for all agreed standalone initiatives
-- fuller business, technical, and operational control examples
-- fuller UWWB platform sample
-- templates and shared standards retained
-
 ## Standalone initiatives included
 - Tower Pricing
 - Renewal Tracker
